@@ -1,0 +1,97 @@
+
+<!doctype html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="trailer.css">
+      <center>
+         <title>MOVIE TRAILERS</title>
+      </center>
+      <center>
+         <h2>TRAILERS</h2>
+      </center>
+      <div id="myModal" class="modal">
+         <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe width="100%" height="250" src="" frameborder="0"
+             {movie_tiles} allow="autoplay; encrypted-media" 
+             allowfullscreen></iframe>
+         </div>
+      </div>
+      <script>
+         var modal=document.getElementById('myModal');
+         var span=document.getElementsByClassName("close")[0];
+         onc=function (c){
+         	modal.style.display="block";
+         	document.getElementsByTagName("iframe")[0].setAttribute("src",'https://www.youtube.com/embed/'+c);
+         }
+         span.onclick=function(){
+         modal.style.display="none";
+         }
+         window.onclick=function(event){
+         if(event.target==modal){
+         modal.style.display="none";
+         }
+         }
+      </script>
+   </head>
+
+   <body>
+      <div class="container">
+         <div class="box light_blue" onclick="onc('6zB6wZKEObc')">
+            <div class="background">
+               <img vspace=25px;
+                  src="https://bit.ly/2x4JgkO" alt="intime pic">
+               <center>
+                  <p>INTIME</p>
+               </center>
+            </div>
+         </div>
+         <div class="box red1" onclick="onc('yseqtsTfIl8')">
+            <div class="background">
+               <img vspace=25px;
+                  src="https://bit.ly/2kb2LyV" alt="tod pic" >
+               <center>
+                  <p>Total Overdose</p>
+               </center>
+            </div>
+         </div>
+         <div class="box green" onclick="onc('K-5EdHZ0hBs')">
+            <div class="background">
+               <img vspace=25px;
+                  src="https://bit.ly/2KIYvlz" alt="nfs pic" >
+               <center>
+                  <p>NFS 2</p>
+               </center>
+            </div>
+         </div>
+         <div class="box orange" onclick="onc('j-ZYwbJtQ9g')">
+            <div class="background">
+               <img vspace=25px;
+                  src="https://bit.ly/2J0Tojk" alt="roadrash pic" >
+               <center>
+                  <p>Road Rash</p>
+               </center>
+            </div>
+         </div>
+         <div class="box white" onclick="onc('K0u_kAWLJOA')">
+            <div class="background">
+               <img vspace=25px;
+                  src="https://bit.ly/2Iya969" alt="god of war pic" >
+               <center>
+                  <p>God Of War</p>
+               </center>
+            </div>
+         </div>
+         <div class="box black" onclick="onc('mNJMQtmWT14')">
+            <div class="background">
+               <img vspace=25px;
+                  src="https://bit.ly/2x07vkp" alt="last day on earth pic" >
+               <center>
+                  <p>Last Day On Earth</p>
+               </center>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
