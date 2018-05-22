@@ -31,4 +31,3 @@ lde = media.Movie("last day on earth",
 
 movies = [it, tod, nfs, rr, gow, lde]
 fresh_tomatoes.open_movies_page(movies)
-# print(media.Movie.__doc__)
