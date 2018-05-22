@@ -5,9 +5,9 @@ print("Content-type:text/html \n")
 
 
 class Movie():
-    '''
+'''
 class Movie():
-Attributes:
+    Attributes:
         movie_title (str): displays the title of the movie.
         poster_image (str): one of the look as image.
         trailer_youtube (str): url of the youtube trailer of the movie.
