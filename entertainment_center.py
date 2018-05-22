@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 import webbrowser
+# here webbrowser imported
 import media
+# here media.py  file is imported
 import fresh_tomatoes
+# here fresh_tomatoes.py file is imported
 
 print("Content-type:text/html \n")
 
@@ -28,6 +31,6 @@ gow = media.Movie("god of war",
 lde = media.Movie("last day on earth",
                   "https://bit.ly/2x07vkp",
                   "https://www.youtube.com/embed/mNJMQtmWT14")
-
 movies = [it, tod, nfs, rr, gow, lde]
+# above movies were opened from fresh_tomatoes
 fresh_tomatoes.open_movies_page(movies)
